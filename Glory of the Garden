@@ -1,0 +1,10 @@
+This garden contains more than it seems.
+
+It is a pretty simple challenge.
+
+Once we download the jpg file we can use strings to find all the strings in present in that file.
+This will be a long list and it is hard to search for the flag so we can use grep to find a matching substrings.
+
+So the final command will be [ $ strings garden.jpg | grep picoCTF ] # as we know that the flag contains these leeter it front of it
+
+So we get the flag once this command is executed and the flag will be picoCTF{more_than_m33ts_the_3y3657BaB2C}.
