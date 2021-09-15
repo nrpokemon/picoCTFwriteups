@@ -1,0 +1,17 @@
+Files can always be changed in a secret way. Can you find the flag?
+
+I got the image into my directory using wget. First thing I done on the file is finding whether it has any hidden data.
+
+I used binwalk for this.
+
+But I didn't get any hidden data except the JPEG file's data.
+
+So I opened the file using a text editor.
+
+I found interesting info at the top of the file. There were few base64 encoded lines:
+
+One of the line was cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9
+
+By decoding it I got the flag.
+
+Flag: picoCTF{the_m3tadata_1s_modified}
